@@ -19,6 +19,8 @@ def iniciar_jarvis():
 
 
 def interpretar_comando(comando):
+    comando = comando.lower().strip() 
+     
     """
     Interpreta o comando digitado pelo usuário e decide qual ação executar.
     Retorna uma mensagem de acordo com o comando reconhecido.
@@ -31,7 +33,7 @@ def interpretar_comando(comando):
     # Se o comando tiver a palavra "abrir_navegador", retorna uma resposta informando
     # que essa função ainda não foi implementada
     elif "abrir_navegador" in comando:
-        return "Ainda não sei abrir o navegador."
+        return abrir_navegador()
 
     # Se o comando tiver a palavra "pesquisar", retorna uma mensagem informando
     # que a função ainda não existe
@@ -64,4 +66,5 @@ def abrir_navegador():
     return "Abrindo o navegador ..." # Retorna mensagem simples ao usuário
 
 
+iniciar_jarvis()
 
