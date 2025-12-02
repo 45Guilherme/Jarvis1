@@ -1,5 +1,6 @@
 from datetime import datetime  # Importa a classe datetime para pegar a data e hora atual
 import webbrowser  # Importa o módulo webbrowser para abrir o navegador
+import urllib.parse # Importa o módulo para codificação de URLs
 
 def iniciar_jarvis():
     # Loop infinito que mantém o Jarvis rodando até receber o comando "encerrar"
@@ -64,6 +65,12 @@ def abrir_navegador():
     """
     webbrowser.open("http://www.google.com")  # Abre o navegador na URL fornecida
     return "Abrindo o navegador ..." # Retorna mensagem simples ao usuário
+
+def pesquisar():
+    """
+    Função para pesquisar algo na internet.
+    """
+    return "Ainda não sei pesquisar nada."
 
 
 iniciar_jarvis()
